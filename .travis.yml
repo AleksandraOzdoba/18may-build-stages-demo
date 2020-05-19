@@ -2,10 +2,10 @@ sudo: false
 dist: trusty
 
 env:
-- TEST_SUITE=integration_tests
-- TEST_SUITE=unit_tests
-
-script: echo "Running tests ..."
+  global:
+  - MAIN=main
+script:
+  - ./script
 
 jobs:
   include:
